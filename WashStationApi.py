@@ -254,25 +254,25 @@ class washstation():
             print("\n")
 
 
-if __name__ == "__main__":
-    # details the api uses to connect to the server
-    details = {"username":"",
-               "password":"",
-               "client_id":"",
-               "client_secret":"",
-               "Device":""
-    }
+# if __name__ == "__main__":
+#     # details the api uses to connect to the server
+#     details = {"username":"",
+#                "password":"",
+#                "client_id":"",
+#                "client_secret":"",
+#                "Device":""
+#     }
 
-    # create an instance of the api class
-    wash = washstation(user=details, debug=True)
+#     # create an instance of the api class
+#     wash = washstation(user=details, debug=True)
 
-    # test functions and their responses
-    wash.login()
-    wash.refresh()
-    wash.getProfile()
-    wash.getWashers()
-    wash.getCart()
+#     # test functions and their responses
+#     wash.login()
+#     wash.refresh()
+#     wash.getProfile()
+#     wash.getWashers()
+#     wash.getCart()
 
-    # test responses and print out available washers
-    wash.printResponse(response=wash.washers)
-    wash.printResponse(response=wash.washers_available)
+#     # test responses and print out available washers
+#     wash.printResponse(response=wash.washers)
+#     wash.printResponse(response=wash.washers_available)
